@@ -140,6 +140,7 @@ public class IndexController extends AbstractController {
             return RestResponseBo.ok();
         } catch (Exception e) {
             String msg = "密码修改失败";
+
             return ExceptionHelper.handlerException(logger, msg, e);
         }
     }
