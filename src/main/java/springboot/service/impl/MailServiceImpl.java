@@ -47,7 +47,7 @@ public class MailServiceImpl implements IMailService {
         message.setTo(to);
         message.setSubject(subject);
         message.setText(content);
-        mailSender.send(message);
+        //mailSender.send(message);
     }
 
     /**

@@ -284,6 +284,18 @@ public class IndexController extends AbstractController {
     }
 
     /**
+     * 友链页
+     *
+     * @return
+     */
+    @GetMapping(value = "registerPage")
+    public String registerPage(HttpServletRequest request) {
+//        List<MetaVo> links = metaService.getMetas(Types.LINK.getType());
+//        request.setAttribute("links", links);
+        return this.render("register");
+    }
+
+    /**
      * 自定义页面,如关于的页面
      */
     @GetMapping(value = "/{pagename}")
